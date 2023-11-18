@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.nav-containers{
+    background-color: #1A187A;
+}
+.back14{
+    background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 0.1) 100%), linear-gradient(90deg, #84d2ff, #8d5acd);
+}
+.mackbook{
+    height:600px;
+}
+.left-side-first{
+    height: 328px;
+}
+.left-side-second{
+    height: 272px;
+    background-color: #ADC2D7;
+}
+.left-side-second p{
+    color: white;
+}
+.left-side-second h{
+    color: black;
+}
+.right-side{
+    background-color: #EDEDED;
+    height: 100%;
+}
+.bg-custom {
+    background-color: #ADC2D7;
+}
+.bg-customone {
+    background-color: #EDEDED;
+}
+.cat-card{
+    height: 128px;
+    width: 160px;
+    background-color: #EDEDED;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon{
+    font-size: 48px;
+}
+.sale-card{
+    height: 472px;
+    background-color: #958AD4;
+}
+.elaven-sale{
+    padding-top: 20%;
+}
+.elaven{
+    font-weight: bolder;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #25177B;
+    font-size: 72px;
+}
+.sale{
+    font-weight: bolder;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 72px;
+}
+.footer-bg{
+    background-color: #0E071B;
+}
+.buy-btn{
+    height: 48px;
+    width: 153px;
+    background-color: black;
+    box-shadow: 5px 5px 5px	gray;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.buy-btn:hover{
+    background-color: #171495;
+    color: white;
+    border: none;
+}
+.shop-btn{
+    height: 56px;
+    width: 200px;
+    background-color: #171495;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+@media only screen and (max-width: 770px) {
+    .category {
+      padding-top: 520px;
+    }
+  }
