@@ -1,7 +1,6 @@
 
-
 function convertToNumber(value) {
-    return parseInt(value);
+    return parseFloat(value);
 }
 
 function handledeposit(){
@@ -12,6 +11,9 @@ function handledeposit(){
     var sum =convin+convdepo;
     document.getElementById("depo").innerText = sum;
     document.getElementById("input").value ="";
+    var total = document.getElementById("ttl").innerText;
+    var convtotal = convertToNumber(total);
+    document.getElementById("ttl").innerText = convtotal+convin;
 }
 function handlewithdraw(){
     var inputvalue = document.getElementById("with-input").value;
@@ -21,4 +23,8 @@ function handlewithdraw(){
     var sum =convin+convdepo;
     document.getElementById("with").innerText = sum;
     document.getElementById("with-input").value ="";
+    
+    var total = document.getElementById("ttl").innerText;
+    var convtotal = convertToNumber(total);
+    document.getElementById("ttl").innerText = convtotal-convin;
 }
