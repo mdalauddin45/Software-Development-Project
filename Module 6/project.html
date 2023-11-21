@@ -11,13 +11,13 @@
     <div class="amount-container">
         <div class="diposit box">
            <div>
-            <p>00</p>
+            <p id="depo">10</p>
             <h1>Deposit</h1>
            </div>
         </div>
         <div class="withdraw box">
             <div>
-                <p>00</p>
+                <p id="with">00</p>
             <h1>Withdraw</h1>
             </div>
         </div>
@@ -31,15 +31,15 @@
 
     <div class="diposit-withdraw-container">
         <div class="diposit-box input-box">
-            <input type="number">
+            <input id="input" type="number">
             <br>
-            <button class="button" style="vertical-align:middle"><span>Deposit </span></button>
+            <button  onclick="handledeposit()" class="button" style="vertical-align:middle"><span>Deposit </span></button>
             <!-- <button class="btn">Deposit</button> -->
         </div>
         <div class="withdraw-box input-box">
-            <input type="number"> 
+            <input id="with-input" type="number"> 
             <br>
-            <button class="button" style="vertical-align:middle"><span>withdraw </span></button>
+            <button onclick="handlewithdraw()" class="button" style="vertical-align:middle"><span>withdraw </span></button>
         </div>
     </div>
 
