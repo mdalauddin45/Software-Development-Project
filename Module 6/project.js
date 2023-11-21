@@ -2,7 +2,6 @@
 function convertToNumber(value) {
     return parseFloat(value);
 }
-
 function handledeposit(){
     var inputvalue = document.getElementById("input").value;
     var convin = convertToNumber(inputvalue);
