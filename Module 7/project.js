@@ -29,18 +29,26 @@ const displayData = (data) => {
 };
 
 
-const displayMale= async(id)=>{
+const displayMale = async (id) => {
   try {
-    const response = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
-      );
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
     const data = await response.json();
-    console.log(data.meals[0]);
-  } catch{
-    (err)=>{
-      console.log(err);
-    }
+    const mealDetails = data.meals[0];
+
+    const modalTitle = document.querySelector('#staticBackdropLabel');
+    modalTitle.textContent = mealDetails.strMeal;
+
+    const modalBody = document.querySelector('#staticBackdrop .modal-body');
+    modalBody.innerHTML = `
+      <img src="${mealDetails.strMealThumb}" class="img-fluid mb-3" alt="">
+      <h5>Category: ${mealDetails.strCategory}</h5>
+      <p>${mealDetails.strInstructions}</p>
+      <!-- Add more details as needed -->
+    `;
+  } catch (err) {
+    console.log(err);
   }
-}
+};
+
 
 loadData("s");
